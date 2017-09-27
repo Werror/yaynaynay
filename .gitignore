@@ -1,0 +1,21 @@
+# Node / NPM #
+#============#
+node_modules
+
+# Ignored Project Files/Dirs #
+#============================#
+build
+ngrok.exe
+.eslintcache
+*.env
+firebase_config.js
+firebase_functions
+service-account.json
+
+# Logs #
+#======#
+*.log
+
+# OS Files #
+#==========#
+.DS_Store

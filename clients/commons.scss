@@ -1,0 +1,94 @@
+@import "./normalize";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+body,
+div,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.p-05 {
+  padding: 0.5rem;
+}
+
+.py-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mt-025 {
+  margin-top: 0.25rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-05 {
+  margin-left: 0.5rem;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+strong,
+small {
+  color: #5a5a5a;
+}

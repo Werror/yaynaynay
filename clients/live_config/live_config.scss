@@ -1,0 +1,62 @@
+$secondary: #66bb6a;
+$secondary-light: #98ee99;
+$danger: #ef3d39;
+$danger-light: #ff807f;
+$primary: #ffeb3b;
+$primary-light: #ffff72;
+$purple: #6441a4;
+$bg: #fefcef;
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: $bg;
+}
+
+.pollSelector {
+  width: 100%;
+}
+
+.error-msg {
+  margin-bottom: 0.5rem;
+  color: $danger;
+}
+
+select {
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.btn-set {
+  width: 70%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $secondary-light;
+}
+
+.btn-set:hover {
+  background: $secondary;
+  transition: background 0.2s linear;
+}
+
+.btn-unset {
+  width: 70%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $danger-light;
+}
+
+.btn-unset:hover {
+  background: $danger;
+  transition: background 0.2s linear;
+}
+
+a {
+  text-decoration: none;
+  color: $purple;
+}

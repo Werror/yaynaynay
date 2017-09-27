@@ -1,0 +1,235 @@
+/* =============================================================================
+  BASE PANEPANEL & APP-BUTTON
+============================================================================= */
+$primary: #ffeb3b;
+$primary-light: #ffff72;
+$primary-mid: #d6ca35;
+$primary-dark: #e0ce2f;
+$secondary: #66bb6a;
+$secondary-light: #98ee99;
+$secondary-dark: #338a3e;
+$danger: #ef3d39;
+$danger-light: #ff807f;
+$eggshell: #fffeee;
+
+.App {
+  height: 100%;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.PollPanel {
+  max-width: 412px;
+  max-height: 208px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: $primary;
+  border-radius: 10px;
+  border: 6px solid $primary-dark;
+}
+
+.app-button {
+  position: absolute;
+  top: calc(50% - 50px);
+  right: 0;
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.vis {
+  opacity: 1;
+}
+
+.invis {
+  opacity: 0;
+  cursor: none;
+}
+
+.app-button:hover {
+  background: #66bb6a;
+  transition: background 0.5s linear;
+}
+
+@media screen and (max-width: 588px) {
+  .PollPanel {
+    display: none;
+  }
+
+  .app-button {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* =============================================================================
+  PANEHOME
+============================================================================= */
+.PaneHome {
+  height: 100%;
+}
+
+.noAuth {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.pollTitle {
+  background: $primary-dark;
+}
+
+.btn {
+  width: 50%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $secondary;
+}
+
+.btn:hover {
+  background: $secondary-light;
+  transition: background 0.2s linear;
+}
+
+/* =============================================================================
+  PANEPOLLING
+============================================================================= */
+.PanePolling {
+  height: 100%;
+}
+
+.btn-yay {
+  width: 33%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $secondary;
+}
+
+.btn-yay:hover {
+  background: $secondary-light;
+  transition: background 0.2s linear;
+}
+
+.btn-nay {
+  width: 33%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $danger;
+}
+
+.btn-nay:hover {
+  background: $danger-light;
+  transition: background 0.2s linear;
+}
+
+.questionAnswer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.yayNay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* =============================================================================
+  PANERESULTS
+============================================================================= */
+.PaneResults {
+  height: 100%;
+}
+
+.results {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.yayCount {
+  background: $secondary-light;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+.nayCount {
+  background: $danger-light;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+.goHome {
+  cursor: pointer;
+}
+
+.goHome:hover {
+  color: white;
+}
+
+.btn-next {
+  width: 50%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $eggshell;
+}
+
+.btn-next:hover {
+  background: $primary-mid;
+  transition: background 0.2s linear;
+}

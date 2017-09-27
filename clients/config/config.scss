@@ -1,0 +1,89 @@
+$secondary: #66bb6a;
+$secondary-light: #98ee99;
+$danger: #ef3d39;
+$danger-light: #ff807f;
+$gray: #5a5a5a;
+$bg: #fefcef;
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  // background: url("../media/bg-live.png");
+  background: $bg;
+}
+
+.App {
+  max-width: 768px;
+  padding: 0.5rem;
+}
+
+.pollSelector {
+  width: 100%;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.error-msg {
+  margin-bottom: 0.5rem;
+  color: $danger;
+}
+
+.btn-add {
+  width: 70%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $secondary;
+}
+
+.btn-add:hover {
+  background: $secondary-light;
+  transition: background 0.2s linear;
+}
+
+.btn-del {
+  width: 70%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $danger;
+}
+
+.btn-del:hover {
+  background: $danger-light;
+  transition: background 0.2s linear;
+}
+
+.btn-del.cantDelete {
+  background: $danger-light;
+  cursor: not-allowed;
+  color: $gray;
+}
+
+.list {
+  list-style-type: disc;
+  text-align: left;
+}
+
+li {
+  margin-top: 0.5rem;
+  color: $gray;
+}
+
+.newPoll-input {
+  display: block;
+  margin: 0.25rem auto 0;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.p-1 {
+  padding: 1rem;
+}
